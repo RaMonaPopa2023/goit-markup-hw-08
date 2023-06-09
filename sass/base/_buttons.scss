@@ -109,6 +109,12 @@
   margin-left: 284px;
   background: transparent;
   border: none;
+  &:hover,
+  &:focus {
+    color: var(--link-active-color);
+    transition: color var(--transition);
+    transition: background-color var(--transition);
+  }
 }
 .button--close-menu {
   align-self: flex-end;
