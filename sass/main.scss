@@ -13,10 +13,3 @@
 @import "./components/customers";
 @import "./components/portfolio_page";
 @import "./utils/container";
-
-.team__icons--circle {
-  background: rgba(255, 255, 255, 0.1);
-}
-a.team__icons--circle:first-child {
-  margin-left: 0;
-}
