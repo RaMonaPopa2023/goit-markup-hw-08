@@ -1,0 +1,133 @@
+/*Footer*/
+
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    text-align: center;
+  }
+  &__link {
+    text-decoration: none;
+  }
+
+  &__address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-top: 28px;
+    white-space: nowrap;
+    text-align: center;
+    font-style: normal;
+
+    &--text {
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__contact {
+    margin-top: 60px;
+    text-transform: uppercase;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+
+    .footer__title {
+      color: #ffffff;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  .social-media-icon {
+    display: flex;
+    justify-content: center;
+  }
+}
+.social-media-icon--background {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  .social-media-icon--center {
+    width: 20px;
+    height: 20px;
+    color: #afb1b8;
+    margin: 12px;
+    &:hover,
+    &:focus {
+      color: var(--social-links-color);
+      transition: color var(--transition);
+      transition: background-color var(--transition);
+    }
+  }
+}
+
+.footer__address .footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  margin-top: 12px;
+  &:hover,
+  &:focus {
+    color: var(--link-active-color);
+    transition: color var(--transition);
+    transition: background-color var(--transition);
+  }
+}
+.footer__item .logo {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+@media screen and (min-width: $mobile-breakpoint) {
+}
+@media screen and (min-width: $desktop-breakpoint) {
+  .footer {
+    .logo {
+      text-align: left;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+    &__address {
+      text-align: left;
+    }
+
+    &__contact {
+      margin-top: 15px;
+      text-transform: uppercase;
+      margin-left: 94px;
+      display: flex;
+      flex-direction: column;
+      .footer__title {
+        text-align: left;
+      }
+    }
+    & div {
+      display: flex;
+    }
+    .social-media-icon .social-media-icon--background:first-child {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.activity {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  padding: 60px 15px;
+  .container .activity__item:last-child {
+    display: none;
+  }
+  &__item {
+    padding-inline-start: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  &__description:not(.activity__details) {
+    text-align: center;
+  }
+  &__title {
+    display: none;
+  }
+
+  &__details {
+    margin-block-start: 10px;
+    margin-block-end: 30px;
+    text-align: left;
+  }
+
+  &__rectangle {
+    display: table;
+    width: 450px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: $mobile-breakpoint) {
+  .activity {
+    &__item {
+      padding-inline-start: 0px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    &__description {
+      width: 354px;
+    }
+    &__rectangle {
+      width: 354px;
+      height: 120px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .activity {
+    padding: 94px 215px;
+    .container .activity__item:last-child {
+      display: flex;
+    }
+
+    &__item {
+      padding-inline-start: 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 0;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+    .activity__description .activity__details {
+      width: 270px;
+    }
+    .activity__description + .activity__description {
+      margin-left: 30px;
+    }
+    &__details {
+      margin-block-start: 10px;
+      margin-block-end: 0;
+    }
+    &__title {
+      display: flex;
+      justify-content: center;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-top: 94px;
+    }
+    &__description {
+      position: relative;
+    }
+    &__overlay {
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      background: rgba(47, 48, 58, 0.8);
+      color: #ffffff;
+      width: 370px;
+      height: 70px;
+      padding-top: 27px;
+      position: absolute;
+      left: 0px;
+      top: 224px;
+      z-index: 2;
+    }
+
+    &__rectangle {
+      width: 270px;
+      height: 120px;
+
+      .activity__icons {
+        display: block;
+        margin: 25px 102.34px;
+      }
+    }
+    &__icons {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}

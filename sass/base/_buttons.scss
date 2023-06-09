@@ -1,0 +1,122 @@
+.section-hero__btn {
+  background: var(--btn-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 30px auto;
+  padding: 10px 20px;
+  position: relative;
+  display: block;
+}
+
+.hero_section_portfolio__btn {
+  background: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primarycolor;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border-width: 0;
+  white-space: nowrap;
+  height: 38px;
+  padding: 6px 22px;
+  &:hover,
+  &focus,
+  &--active {
+    background: var(--btn-color);
+    color: #ffffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: color var(--transition);
+    transition: background-color var(--transition);
+    transition: box-shadow var(--transition);
+  }
+}
+.modal__btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--btn-color);
+    transition: transform var(--transition);
+  }
+}
+.footer__btn {
+  width: 200px;
+  height: 50px;
+  background: var(--btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 36px;
+  border: none;
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  padding-left: 43px;
+}
+.form__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  &--submit {
+    background: var(--btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 80px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    max-width: 200px;
+
+    &:hover,
+    &:focus {
+      background: var(--form_btn-color);
+      transition: transform var(--transition);
+    }
+  }
+}
+.button--toggle-menu {
+  padding: 0;
+  width: 24px;
+  height: 16px;
+  margin-left: 284px;
+  background: transparent;
+  border: none;
+}
+.button--close-menu {
+  align-self: flex-end;
+  background: transparent;
+  border: none;
+  display: none;
+  padding: 0;
+  width: 18.67px;
+  height: 18.67px;
+  margin-top: 21px;
+}

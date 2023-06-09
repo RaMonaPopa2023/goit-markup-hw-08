@@ -1,0 +1,33 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+
+  &--black {
+    color: #000000;
+  }
+  &--white {
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+
+    &--black {
+      color: #000000;
+    }
+    &--white {
+      color: #ffffff;
+    }
+  }
+}

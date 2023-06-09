@@ -1,0 +1,106 @@
+.hero_section_portfolio {
+  .hero_section_portfolio__item {
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0;
+    padding: 94px 542px 50px 542px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .hero_section_portfolio__item
+    .hero_section_portfolio__list
+    + .hero_section_portfolio__list {
+    margin-left: 8px;
+  }
+}
+
+.services {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: $primarycolor;
+  display: flex;
+
+  .services__item .services__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    font-style: normal;
+  }
+
+  .services__item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    margin-bottom: 94px;
+  }
+  .services__title {
+    margin-left: 24px;
+    margin-top: 20px;
+    position: absolute;
+  }
+  .services__subtitle {
+    position: absolute;
+    margin-left: 24px;
+    margin-top: 20px;
+  }
+  .services__item .services__content {
+    background: #ffffff;
+    height: 404px;
+    border: 1px solid #eeeeee;
+    border-image-width: 0;
+    position: relative;
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+  .services__overlay {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+  }
+  .services__overlay:hover .services__overlay--with-img {
+    cursor: pointer;
+    top: 0;
+  }
+
+  &__overlay {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+  }
+  &__overlay--with-img {
+    position: absolute;
+    background: rgba(33, 150, 243, 0.9);
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px 91px 24px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    transition-property: top, right, bottom, left;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    top: 100%;
+  }
+  &__overlay--with-text {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin: 0;
+  }
+}
