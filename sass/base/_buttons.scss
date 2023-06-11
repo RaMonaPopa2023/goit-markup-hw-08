@@ -109,12 +109,6 @@
   margin-left: 284px;
   background: transparent;
   border: none;
-  &:hover,
-  &:focus {
-    color: var(--link-active-color);
-    transition: color var(--transition);
-    transition: background-color var(--transition);
-  }
 }
 .button--close-menu {
   align-self: flex-end;
@@ -125,4 +119,13 @@
   width: 18.67px;
   height: 18.67px;
   margin-top: 21px;
+}
+
+@media (hover: hover) and (max-width: $desktop-breakpoint) {
+  .button--close-menu,
+  .button--toggle-menu {
+    color: var(--link-active-color);
+    transition: color var(--transition);
+    transition: background-color var(--transition);
+  }
 }

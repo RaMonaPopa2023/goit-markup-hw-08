@@ -34,7 +34,7 @@
       flex-direction: column;
       gap: 32px;
       background: #ffffff;
-      padding: 48px 40px;
+      padding: 21px 25px 48px 40px;
       z-index: 1;
       :first-child {
         margin: 0;
@@ -42,6 +42,15 @@
 
       .header__contacts .header__icon {
         display: none;
+      }
+      .header__link--active {
+        color: var(--link-active-color);
+      }
+      .header__link:hover,
+      .header__link:focus {
+        color: var(--link-active-color);
+        transition: color var(--transition);
+        transition: background-color var(--transition);
       }
       .header__contacts {
         margin-top: calc(306px - 32px);
